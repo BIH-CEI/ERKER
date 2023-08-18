@@ -26,7 +26,7 @@ Zur Erfassung für das Nationale Register für Seltene Erkrankungen werden folge
 - Alterskategorie: 3.3
 - Geschlecht bei Geburt: 2.2
 - Patientenstatus: 3.1
-- Sterbealter: 3.2B (im ERKER als Sterbedatum)
+- Sterbealter: 3.2B
 - An SE verstorben: 3.4
 - Andere Todesursache: 3.5 [ICD10-GM]
 - Mutter von dieser SE betroffen: 6.5.1A
