@@ -7,7 +7,7 @@ Informationen zum:
 - der IDAT (Identifizierende Daten)
 - Import Templates für die automatisierte Übertragung aus .csv und .xls Dateien
 - NARSE (Nationales Register für Seltene Krankheiten) Datensatz
-- v1.4 
+- v1.5
 - FHIR-Mapping
   
 folgen. 
