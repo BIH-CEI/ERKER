@@ -5,6 +5,11 @@ Der ERKER auf Basis des ERDRI-CDS und dem NARSE (Nationales Register für Selten
 
 Die Version 1.5 zur Datenerfassung in REDCap steht als DataDictionary und als ERKER_v1.7.zip im Ordner "v1.7" zur Verfügung. Nachdem ein Projekt in REDCap aufgesetzt wurde kann damit das Formular hochgeladen werden.
 
+
+![ERKER_Konzept](https://github.com/BIH-CEI/ERKER/assets/109136019/f89c9e1b-d6e8-4e21-adf6-7de133d6728d)
+
+
+
 Informationen zum:
 - Handbuch zur Datenerfassung mit ERKER_v1.7
 - Import Templates v1.7 für die automatisierte Übertragung aus .csv und .xls Dateien
