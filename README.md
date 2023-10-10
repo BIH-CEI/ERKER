@@ -1,68 +1,42 @@
 # ERKER
-ERKER - ERDRI-CDS kompatible Erfassung in REDCap
 
-Der ERKER auf Basis des ERDRI-CDS und dem NARSE (Nationales Register für Seltene Krankheiten) Datensatz ermöglicht die Erfassung von Daten seltener Patient:innen und überführt diese in ein standardisiertes Format gemäß FAIR-Prinzipien (Findability, Accessability, Interoperability, Reusability). 
+### ERKER - ERDRI-CDS kompatible Erfassung in REDCap
+Der ERKER ermöglicht die Erfassung seltener Patient:innen und überführt diese in ein standardisiertes Format gemäß FAIR-Prinzipien (Findability, Accessability, Interoperability, Reusability). Der ERKER Datensatz wurde auf Basis 
+- des ERDRI-CDS (European Rare Disease Registry Infrastructure - Common Data Set) 
+  und
+- dem NARSE (Nationales Register für Seltene Erkrankungen)
+  entwickelt.
+Der ERKER-Datensatz wurde um weitere Datenelemente erweitert, um eine präzisere Darstellung des Krankheits- und Behandlungsverlaufes, \
+der Geno- und Phänotypisierung und der Primär- und Sekundärdiagnosen zu ermöglichen. 
 
-Die Version 1.5 zur Datenerfassung in REDCap steht als DataDictionary und als ERKER_v1.5.zip im Ordner "v1.5" zur Verfügung. Nachdem ein Projekt in REDCap aufgesetzt wurde kann damit das Formular hochgeladen werden.
+Die Version 1.7 steht zur Datenerfassung in REDCap als DataDictionary und als ERKER_v1.7.zip im Ordner "v1.7" zur Verfügung. Nachdem ein Projekt in REDCap aufgesetzt wurde kann damit das Formular hochgeladen werden. Näheres hierzu im Ordner Guidelines. 
 
-Informationen zum:
-- Handbuch zur Datenerfassung mit ERKER_v1.5
-- Import Templates v1.5 für die automatisierte Übertragung aus .csv und .xls Dateien
-- FHIR-Mapping
-  
-folgen. 
+![ERKER_Konzept_flow](https://github.com/BIH-CEI/ERKER/assets/109136019/0410962d-1750-424d-be2f-5e01574e5ce3)
 
-### ERKER als Satellitendokumentation für das NARSE (Nationales Register für Seltene Erkrankungen)
+### ERDRI-CDS
+Den ERDRI-CDS befindet sich im Ordner ERDRI-CDS auf Englisch und Deutsch.
 
-Identifizierende Patient:innen Daten (IDAT) klinikintern und separat speichern: 
-Vorname, Nachname	
-Geburtsname
-Geburtsdatum	
-Geburtsort
-PLZ + Wohnort
-E-Mail-Adresse
-Telefonnummer
 
--> Zur Erfassung für das Nationale Register für Seltene Erkrankungen werden folgende ERKER-Datenelemente erfasst: 
+### ERKER4NARSE
+Hier finden Sie den genauen Leitfaden zur Erfassung für das Nationale Register für Seltene Erkrankungen (NARSE) mit dem ERKER.
+Auch die aktuelle Version des ERKER_v1.7_NARSE steht zum Download bereit. Hierbei werden nur die NARSE relevanten Datenelemente angezeigt.
 
-##### Formale Kriterien
-- Einschlussdatum:                               1.2 
-- Einwilligung:                                  7.1, 7.2.1, 7.2.2A, 7.2.2B,
-                                                 7.2.2C, 7.2.2D, 7.2.2E, 7.2.2F
-- Gesicherte Diagnose:                           6.1.1, 6.1.3
-- Verdachtsdiagnose:                             6.1.11A, 6.1.11B
 
-##### Persönlicher und Familiärer Hintergrund
-- Alterskategorie:                               3.3
-- Geschlecht bei Geburt:                         2.2
-- Patientenstatus:                               3.1
-- Sterbealter:                                   3.2B
-- An SE verstorben:                              3.4
-- Andere Todesursache:                           3.5 [ICD10-GM]
-- Mutter von dieser SE betroffen:                6.5.1A
-- Mutter verstorben:                             6.5.1B
-- Sterbealter der Mutter:                        6.5.1D
-- Vater von dieser SE betroffen:                 6.5.2A
-- Vater verstorben:                              6.5.2B
-- Sterbealter des Vaters:                        6.5.2D
-- Geschwister von dieser SE betroffen:           6.5.3
-- betroffene Gewschwister (Alter, Geschlecht):   6.5.3.1A/B, fff.
-- Kinder von dieser SE betroffen:                6.5.4
-- betroffene Kinder (Alter, Geschlecht):         6.5.4.1A/B, fff.
+### ERKERonFHIR
+Hier werden relevante Dateien zur Übertragung vom ERKER in FHIR abgelegt.
 
-##### Anamnese und Diagnostik
-- Alter bei ersten Symptomen:                    5.1, 5.1.1, 5.1.2, 5.1.3
-- Alter bei Diagnose:                            5.2, 5.2.1, 5.2.2, 5.2.3
-- Absicherung der Diagnose:                      6.1.12
-- Genetisch gesicherte Diagnose:                 6.2.1
-- Betroffenes Gen:                               6.2.4F, 6.2.5F, 6.2.6F
-- Genvariante:                                   6.2.4B-E, 6.2.5B-E, 6.2.6B-E
-- Gesicherte Diagnose anhand spezifier Biomarker:6.1.14
-- Biomarker Befund:                              6.1.14A
-- Klinisch gesicherte Diagnose entsprechend HPO: 6.1.13
-- HPO Term:                                      6.4.1, 6.4.2, ... 6.4.30
-- spezifische Therapie:                          6.1.18
-- sonstige spezifische Therapie:                 6.1.19
+### Guidelines
+Generelle Guidelines zur Erfassung mit ERKER in REDCap.
+
+### ERKER2Phenopackets
+Das Projekt für die Pipeline von ERKER nach Phenopackets: https://github.com/BIH-CEI/ERKER2Phenopackets 
+
+
+### v1.7 
+Zum Download das aktuelle DataDictionary und die .zip Datei für die Installation im lokalen REDCap Projekt. 
+
+
+
 
 
 
