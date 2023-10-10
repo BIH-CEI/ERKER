@@ -14,15 +14,25 @@ Die Version 1.7 steht zur Datenerfassung in REDCap als DataDictionary und als ER
 ![ERKER_Konzept](https://github.com/BIH-CEI/ERKER/assets/109136019/f89c9e1b-d6e8-4e21-adf6-7de133d6728d)
 
 
+### ERDRI-CDS
+Den ERDRI-CDS befindet sich im Ordner ERDRI-CDS auf Englisch und Deutsch.
 
 
+### ERKER4NARSE
+Hier finden Sie den genauen Leitfaden zur Erfassung für das Nationale Register für Seltene Erkrankungen (NARSE) mit dem ERKER.
+Auch die aktuelle Version des ERKER_v1.7_NARSE steht zum Download bereit. Hierbei werden nur die NARSE relevanten Datenelemente angezeigt.
 
-Informationen zum:
-- Handbuch zur Datenerfassung mit ERKER_v1.7
-- Import Templates v1.7 für die automatisierte Übertragung aus .csv und .xls Dateien
-- FHIR-Mapping
-  
-folgen. 
+
+### ERKERonFHIR
+Hier werden relevante Dateien zur Übertragung vom ERKER in FHIR abgelegt.
+
+### Guidelines
+Generelle Guidelines zur Erfassung mit ERKER in REDCap.
+
+### v1.7 
+Zum Download das aktuelle DataDictionary und die .zip Datei für die Installation im lokalen REDCap Projekt. 
+
+
 
 
 
