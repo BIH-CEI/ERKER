@@ -29,6 +29,10 @@ Hier werden relevante Dateien zur Übertragung vom ERKER in FHIR abgelegt.
 ### Guidelines
 Generelle Guidelines zur Erfassung mit ERKER in REDCap.
 
+### ERKER2Phenopackets
+Das Projekt für die Pipeline von ERKER nach Phenopackets: https://github.com/BIH-CEI/ERKER2Phenopackets 
+
+
 ### v1.7 
 Zum Download das aktuelle DataDictionary und die .zip Datei für die Installation im lokalen REDCap Projekt. 
 
