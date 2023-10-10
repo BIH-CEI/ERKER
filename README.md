@@ -11,6 +11,7 @@ der Geno- und Phänotypisierung und der Primär- und Sekundärdiagnosen zu ermö
 
 Die Version 1.7 steht zur Datenerfassung in REDCap als DataDictionary und als ERKER_v1.7.zip im Ordner "v1.7" zur Verfügung. Nachdem ein Projekt in REDCap aufgesetzt wurde kann damit das Formular hochgeladen werden. Näheres hierzu im Ordner Guidelines. 
 
+![ERKER_Konzept_flow](https://github.com/BIH-CEI/ERKER/assets/109136019/0410962d-1750-424d-be2f-5e01574e5ce3)
 
 ### ERDRI-CDS
 Den ERDRI-CDS befindet sich im Ordner ERDRI-CDS auf Englisch und Deutsch.
