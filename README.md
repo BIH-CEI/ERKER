@@ -29,7 +29,6 @@ Den ERDRI-CDS befindet sich im Ordner ERDRI-CDS auf Englisch und Deutsch.
 Hier finden Sie den genauen Leitfaden zur Erfassung für das Nationale Register für Seltene Erkrankungen (NARSE) mit dem ERKER.
 Auch die aktuelle Version des ERKER_v1.7_NARSE steht zum Download bereit. Hierbei werden nur die NARSE relevanten Datenelemente angezeigt.
 
-
 #### ERKERonFHIR
 Hier werden relevante Dateien zur Übertragung vom ERKER in FHIR abgelegt.
 
@@ -38,7 +37,6 @@ Generelle Guidelines zur Erfassung mit ERKER in REDCap.
 
 #### ERKER2Phenopackets
 Das Projekt für die Pipeline von ERKER nach Phenopackets: https://github.com/BIH-CEI/ERKER2Phenopackets 
-
 
 ### v1.7 
 Zum Download das aktuelle DataDictionary und die .zip Datei für die Installation im lokalen REDCap Projekt. 
