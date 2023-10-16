@@ -32,8 +32,7 @@ Version 1.7 is available for data entry in REDCap as DataDictionary and as ERKER
 
 
 ## Project Description
-The
-![ERKER_Konzept_flow](https://github.com/BIH-CEI/ERKER/assets/109136019/0410962d-1750-424d-be2f-5e01574e5ce3)
+tba. 
 
 ## Features
 #### Independent testing: 
@@ -64,6 +63,8 @@ In the folder <b>previous versions</b> previous versions were stored.
 Guides for the installation of the *ERKER* in REDCap and for the (semi)automated transfer from tabular formats into the ERKER format are available in the folder <b>Guidelines</b>.
 
 ## Resources
+ERKER Data flow for the National Register of Rare diseases (NARSE): 
+![ERKER_Konzept_flow](https://github.com/BIH-CEI/ERKER/assets/109136019/0410962d-1750-424d-be2f-5e01574e5ce3)
 
 ## License
 
