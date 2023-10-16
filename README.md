@@ -20,22 +20,23 @@ Bitte tragen Sie hier <ins>keine Echtdaten</ins> ein.
 ### ERKER Konzept
 ![ERKER_Konzept_flow](https://github.com/BIH-CEI/ERKER/assets/109136019/0410962d-1750-424d-be2f-5e01574e5ce3)
 
-### ERDRI-CDS
+
+## Ordner Strukutur:
+#### ERDRI-CDS
 Den ERDRI-CDS befindet sich im Ordner ERDRI-CDS auf Englisch und Deutsch.
 
-
-### ERKER4NARSE
+#### ERKER4NARSE
 Hier finden Sie den genauen Leitfaden zur Erfassung für das Nationale Register für Seltene Erkrankungen (NARSE) mit dem ERKER.
 Auch die aktuelle Version des ERKER_v1.7_NARSE steht zum Download bereit. Hierbei werden nur die NARSE relevanten Datenelemente angezeigt.
 
 
-### ERKERonFHIR
+#### ERKERonFHIR
 Hier werden relevante Dateien zur Übertragung vom ERKER in FHIR abgelegt.
 
-### Guidelines
+#### Guidelines
 Generelle Guidelines zur Erfassung mit ERKER in REDCap.
 
-### ERKER2Phenopackets
+#### ERKER2Phenopackets
 Das Projekt für die Pipeline von ERKER nach Phenopackets: https://github.com/BIH-CEI/ERKER2Phenopackets 
 
 
