@@ -70,12 +70,13 @@ ERKER Data flow for the National Register of Rare diseases (NARSE):
 
 ## Acknowledgments
 We would like to thank all participating researchers in the development of the *ERKER* data set: 
-Annic Weyersberg, Ana Grönke, Elisabeth Nyongui, Jana Zschüntzsch, Josef Schepers, Miriam Hübner, Steffen Sander, Adam Graefe
+Annic Weyersberg, Ana Grönke, Elisabeth Nyoungui, Jana Zschüntzsch, Josef Schepers, Miriam Hübner, Steffen Sander, Adam Graefe
 ## Contact
 - Adam Graefe (adam.graefe@bih-charite.de)
 - Dr. Josef Schepers (josef.schepers@bih-charite.de)
 - Filip Rehburg (filip.rehburg@bih-charite.de)
 - Miriam Hübner (miriam-rebecca.huebner@charite.de)
+- Steffen Sander (steffen.sander@charite.de)
 
 
 
