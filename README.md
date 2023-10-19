@@ -40,7 +40,7 @@ Please enter <ins>no real data</ins> here.
 The ERDRI CDS is located in the <b>ERDRI CDS</b> folder in English and German.
 
 #### ERKER4NARSE
-In the folder <b>ERKER4NARSE</b> you will find the detailed guidelines for recording for the National Register for Rare Diseases (NARSE) with the ERKER.
+In the folder <b>ERKER4NARSE</b> you will find the detailed guidelines (so far inside the document <b>ERKER4NARSE.md</b>) for recording for the National Register for Rare Diseases (NARSE) with the ERKER.
 The current version of ERKER_v1.7_NARSE is also available for download. In this form, only the NARSE-relevant data elements are displayed. All other data elements are being hidden using the REDCAP @HIDDEN function. This does not affect the import and export functionalities.
 
 #### ERKERonFHIR
