@@ -482,3 +482,14 @@ sekundärdiagnosen:
 ### choices code change:
 - sct_767023003: CS_MII_Person_Vitalstatus_X, Unbekannt -> sct code für Unbekannt, Unbekannt
 
+
+# v1.8: 
+- 2.4: add Geburtsland Snomed-CT: "Born in Germany" (315431007) oder nur "Germany" (22367004)? 
+- 3.3: Notiz erweitern: "Bitte Alterskategorie beim Zeitpunkt der Datenerfassung bzw. dem Einschluss im NARSE angeben."
+- 4.3: Notiz hinzufügen: Ziel am Zentrum für SE allgemein
+
+- 5.3: Notiz hinzufügen: Antenatal bedeuted vor der Geburt. Malformation ... 
+
+- 5.5/5.6: branching logic, wenn Indexfall "ja", sollte 5.6 nicht angezeigt werden
+
+- 6.1.16: Notiz hinzufügen: Bedeutung erklären mitochondriale Vererbung
