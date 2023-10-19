@@ -56,7 +56,7 @@ With the subproject ERKER2Phenopackets we develop the transfer of ERKER data to 
 Im the folder <b>v1.7</b> the current data dictionary and the *ERKER_v1.7.zip* file for the installation in a local REDCap project are stored.
 In the folder <b>previous versions</b> previous versions were stored. 
 #### Guidelines
-Guides for the installation of the *ERKER* in REDCap and for the (semi)automated transfer from tabular formats into the ERKER format are available in the folder <b>Guidelines</b>.
+Guides for the installation of the *ERKER* in REDCap and for the (semi)automated transfer from tabular formats into the ERKER format are available in the folder <b>Guidelines</b>. The ERKER_v1.7.csv Import Template and the Jupyter Notebook to create the import template and map, orchestrate tabular data and write the ERKER_v1.7 compatible CSV file is within the folder <b>Data Import</b>.
 
 ## Resources
 ERKER Data flow for the National Register of Rare diseases (NARSE): 
