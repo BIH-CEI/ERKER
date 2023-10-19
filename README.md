@@ -1,19 +1,11 @@
 # ERKER
-
-### ERKER - ERDRI-CDS kompatible Erfassung in REDCap
-The ERKER enables the data caputure of rare patients and transfers them into a standardised format according to FAIR principles (Findability, Accessibility, Interoperability, Reusability). The ERKER dataset was developed on the basis of the 
-- of the ERDRI-CDS (European Rare Disease Registry Infrastructure - Common Data Set) 
-  and
-- the NARSE (National Registry for Rare Diseases).
-  was developed.
-Additional data elements were added to the ERKER dataset to provide a more accurate representation of disease and treatment progression, genotyping and phenotyping, and primary and secondary diagnoses. 
-
-Version 1.7 is available for data entry in REDCap as DataDictionary and as ERKER_v1.7.zip in the folder "v1.7". After a project has been set up in REDCap, the form can be uploaded with it. More details can be found in the Guidelines folder.
+![Alt text](image.png))
+### (ERDRI-CDS compatible data capture in REDCap)
 
 ## Table of Contents
 
 - [ERKER](#erker)
-    - [ERKER - ERDRI-CDS kompatible Erfassung in REDCap](#erker---erdri-cds-kompatible-erfassung-in-redcap)
+    - [(ERDRI-CDS compatible data capture in REDCap)](#erdri-cds-compatible-data-capture-in-redcap)
   - [Table of Contents](#table-of-contents)
   - [Project Description](#project-description)
   - [Features](#features)
@@ -32,7 +24,14 @@ Version 1.7 is available for data entry in REDCap as DataDictionary and as ERKER
 
 
 ## Project Description
-tba. 
+The ERKER enables the data caputure of rare patients and transfers them into a standardised format according to FAIR principles (Findability, Accessibility, Interoperability, Reusability). The ERKER dataset was developed on the basis of the 
+- of the ERDRI-CDS (European Rare Disease Registry Infrastructure - Common Data Set) 
+  and
+- the NARSE (National Registry for Rare Diseases).
+  was developed.
+Additional data elements were added to the ERKER dataset to provide a more accurate representation of disease and treatment progression, genotyping and phenotyping, and primary and secondary diagnoses. 
+
+Version 1.7 is available for data entry in REDCap as DataDictionary and as ERKER_v1.7.zip in the folder "v1.7". After a project has been set up in REDCap, the form can be uploaded with it. More details can be found in the Guidelines folder.
 
 ## Features
 #### Independent testing: 
