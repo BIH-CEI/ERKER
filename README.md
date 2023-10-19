@@ -1,26 +1,23 @@
-# ERKER
-![Alt text](image.png))
+![Alt text](image.png)
 ### (ERDRI-CDS compatible data capture in REDCap)
 
 ## Table of Contents
 
-- [ERKER](#erker)
-    - [(ERDRI-CDS compatible data capture in REDCap)](#erdri-cds-compatible-data-capture-in-redcap)
-  - [Table of Contents](#table-of-contents)
-  - [Project Description](#project-description)
-  - [Features](#features)
-      - [Independent testing:](#independent-testing)
-      - [ERDRI-CDS](#erdri-cds)
-      - [ERKER4NARSE](#erker4narse)
-      - [ERKERonFHIR](#erkeronfhir)
-      - [ERKER2Phenopackets](#erker2phenopackets)
-  - [Installation](#installation)
-      - [v1.7](#v17)
-      - [Guidelines](#guidelines)
-  - [Resources](#resources)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
-  - [Contact](#contact)
+- [Table of Contents](#table-of-contents)
+- [Project Description](#project-description)
+- [Features](#features)
+    - [Independent testing:](#independent-testing)
+    - [ERDRI-CDS](#erdri-cds)
+    - [ERKER4NARSE](#erker4narse)
+    - [ERKERonFHIR](#erkeronfhir)
+    - [ERKER2Phenopackets](#erker2phenopackets)
+- [Installation](#installation)
+    - [v1.7](#v17)
+    - [Guidelines](#guidelines)
+- [Resources](#resources)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Contact](#contact)
 
 
 ## Project Description
