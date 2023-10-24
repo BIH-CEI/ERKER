@@ -75,7 +75,7 @@ Annic Weyersberg, Ana Grönke, Elisabeth Nyoungui, Jana Zschüntzsch, Josef Sche
 - Steffen Sander
   
 ## Contact
-Please write an [issue](https://github.com/BIH-CEI/ERKER/issues/new) if you encounter any problems.
+Please write an [issue](https://github.com/BIH-CEI/ERKER/issues/new?assignees=&labels=question&projects=&template=question.md&title=%5BQUESTION%5D+Type+your+question+here) or exchange with other users in the [discussions](https://github.com/BIH-CEI/ERKER/discussions) if you encounter any problems.
 
 
 
