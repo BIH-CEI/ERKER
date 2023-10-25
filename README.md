@@ -59,8 +59,8 @@ In the folder <b>previous versions</b> previous versions were stored.
 Guides for the installation of the *ERKER* in REDCap and for the (semi)automated transfer from tabular formats into the ERKER format are available in the folder <b>Guidelines</b>. The ERKER_v1.7.csv Import Template and the Jupyter Notebook to create the import template and map, orchestrate tabular data and write the ERKER_v1.7 compatible CSV file is within the folder <b>Data Import</b>.
 
 ## Resources
-ERKER Data flow for the National Register of Rare diseases (NARSE): 
-![ERKER_Konzept_flow](https://github.com/BIH-CEI/ERKER/assets/109136019/0410962d-1750-424d-be2f-5e01574e5ce3)
+ERKER Data flow for the National Register of Rare diseases (NARSE):
+![ERKER_Konzept](https://github.com/BIH-CEI/ERKER/assets/109136019/c408d907-6a07-4dc3-8f84-22483bd1f326)
 
 ## License
 
