@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xs3p.xsl"?>
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://registry.samply.de/schemata/import_v1" xmlns="http://registry.samply.de/schemata/import_v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BHImport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Mdr">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:anyURI" name="URL" fixed="https://mdr.test.osse-register.de/rest/api/mdr"></xs:element>
+              <xs:element type="xs:string" name="Namespace" fixed="urn:osse-46"></xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        <xs:element name="BHPatient" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Identifier">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="encrypted"></xs:attribute>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              
+              <xs:element name="Locations">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Location" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          
+                          <xs:element name="BasicData">
+                            <xs:complexType>
+                              <xs:sequence>
+
+                                <xs:element name="Form" minOccurs="0">
+                                  <xs:annotation>
+                                      <xs:documentation></xs:documentation>
+                                  </xs:annotation>
+                                  <xs:complexType mixed="true">
+                                    <xs:all>
+                                      
+                                      <xs:element name="Dataelement_95_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate the date of informed consent of the affected person for participation in NARSE.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Consent date"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_4_3" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Consent for data use has been obtained.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Consent for data use"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_6_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Consent for international data use (restricted to EU area) has been obtained.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Data use international (EU)"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_49_3" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Consent to be contacted for research purposes or to get in touch with other affected persons has been obtained.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Contact for research purposes or networking"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_80_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Consent for capture of genetic information (regarding the affected gene and the detected mutation) has been obtained. </xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Capture of genetic information"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_82_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Consent for the exchange of information with physicians from other health care facilities for the purpose of case reviews (consil) has been obtained. </xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Case review"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+
+                                      
+                                    </xs:all>
+                                    <xs:attribute name="name" use="required" fixed="form_271_ver-5"></xs:attribute>
+                                  </xs:complexType>
+                                </xs:element>
+
+                                <xs:element name="Form1" minOccurs="0">
+                                  <xs:annotation>
+                                      <xs:documentation></xs:documentation>
+                                  </xs:annotation>
+                                  <xs:complexType mixed="true">
+                                    <xs:all>
+                                      
+                                      <xs:element name="Dataelement_62_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate the date of inclusion of the affected person in NARSE.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Inclusion date"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Record_21_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Confirmed diagnosis</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Row" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                                                        <xs:element name="Dataelement_10_5" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>ORPHAcode of the rare disease (confirmed diagnosis).</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="ORPHAcode"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_105_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>ICD code of the rare disease (confirmed diagnosis) (ICD-10-GM 2020 integrated into OSSE)</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="ICD code"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_99_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Specification of the version of the ICD catalog used including year (confirmed diagnosis)</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="ICD Version"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute type="xs:string" name="name" fixed="Confirmed diagnosis"/>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Record_22_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Suspected diagnosis</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Row" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                                                        <xs:element name="Dataelement_46_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>ORPHAcode of the rare disease (suspected diagnosis).</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="ORPHAcode"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_104_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>ICD code of the rare disease (suspected diagnosis) (ICD-10-GM 2020 integrated into OSSE)</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="ICD code"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_100_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Specification of the version of the ICD catalog used including year (suspected diagnosis)</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="ICD Version"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute type="xs:string" name="name" fixed="Suspected diagnosis"/>
+                                        </xs:complexType>
+                                      </xs:element>
+
+
+                                      
+                                    </xs:all>
+                                    <xs:attribute name="name" use="required" fixed="form_182_ver-16"></xs:attribute>
+                                  </xs:complexType>
+                                </xs:element>
+
+                                <xs:element name="Form2" minOccurs="0">
+                                  <xs:annotation>
+                                      <xs:documentation></xs:documentation>
+                                  </xs:annotation>
+                                  <xs:complexType mixed="true">
+                                    <xs:all>
+                                      
+                                      <xs:element name="Dataelement_84_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate the age group at inclusion in NARSE.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Age group"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_68_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate the affected person&apos;s sex at birth.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Sex"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Record_20_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Current status</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Row" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                                                        <xs:element name="Dataelement_101_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate the date of the most recent verification of the status of the affected person.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Date"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_55_5" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please select the affected person&apos;s current status.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Status"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute type="xs:string" name="name" fixed="Current status"/>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_83_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate the affected person&apos;s age at death in years.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Age at death"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_70_3" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate whether the affected person died of the rare disease.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Died of RD"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_15_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate other cause of death.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Other cause of death"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_71_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate if the mother is affected by this rare disease.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Mother affected by this RD"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_72_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate if the motheris deceased.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Mother deceased"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_58_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate the mother&apos;s age at death.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Mother&apos;s age at death"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_73_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate if the father is affected by this rare disease. </xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Father affected by this RD"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_74_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate if the father is deceased.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Father deceased"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_59_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate the father&apos;s age at death.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Father&apos;s age at death"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_75_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate if any siblings are affected by this rare disease.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Siblings affected by this RD"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Record_12_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Details about the affected sibling(s).</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Row" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                                                        <xs:element name="Dataelement_21_4" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate the sibling&apos;s age at the time of inclusion in the NARSE.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Age"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_69_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate the sibling&apos;s sex.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Sex"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute type="xs:string" name="name" fixed="Affected siblings"/>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_87_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate if any of the affected person&apos;s children are affected by this rare disease (if applicable)</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Children affected by this RD"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Record_14_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Details about the affected children.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Row" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                                                        <xs:element name="Dataelement_86_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate the child&apos;s age at the time of inclusion in the NARSE.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Age"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_85_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate the child&apos;s sex.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Sex"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute type="xs:string" name="name" fixed="Affected children"/>
+                                        </xs:complexType>
+                                      </xs:element>
+
+
+                                      
+                                    </xs:all>
+                                    <xs:attribute name="name" use="required" fixed="form_183_ver-14"></xs:attribute>
+                                  </xs:complexType>
+                                </xs:element>
+
+                                <xs:element name="Form3" minOccurs="0">
+                                  <xs:annotation>
+                                      <xs:documentation></xs:documentation>
+                                  </xs:annotation>
+                                  <xs:complexType mixed="true">
+                                    <xs:all>
+                                      
+                                      <xs:element name="Dataelement_89_3" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please select the appropriate age description for age at first symptoms.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Age at first symptoms"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Record_16_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Age at first symptoms (in years and months)</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                                                                  <xs:element name="Dataelement_90_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Age at first symptoms (in years)</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Years"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_91_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Age at first symptoms (in months)</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Months"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                          </xs:sequence>
+                                          <xs:attribute type="xs:string" name="name" fixed="Age at first symptoms"/>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_92_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please select the appropriate age description for age at diagnosis.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Age at diagnosis"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Record_17_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Age at diagnosis (in years and months)</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                                                                  <xs:element name="Dataelement_93_3" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Age at diagnosis (in years)</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Years"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_94_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Age at diagnosis (in months)</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Months"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                          </xs:sequence>
+                                          <xs:attribute type="xs:string" name="name" fixed="Age at diagnosis"/>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_102_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please select how the diagnosis was confirmed.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Confirmation of the diagnosis"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_103_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please add details on other confirmation of diagnosis.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Other confirmation of diagnosis"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_76_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate if the diagnosis was genetically confirmed.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Genetically confirmed diagnosis"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Record_13_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Genetic diagnosis</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Row" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                                                        <xs:element name="Dataelement_66_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please specify the affected gene with respect to the genetically confirmed diagnosis.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Affected gene"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_67_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please add information about the identified gene variant.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Gene variant"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute type="xs:string" name="name" fixed="Genetic diagnosis"/>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_77_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate if the diagnosis was confirmed using specific biomarkers.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Confirmed diagnosis using specific biomarkers"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Record_15_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Biomarker findings</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Row" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                                                        <xs:element name="Dataelement_41_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please enter the specific biomarkers.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Biomarker finding"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute type="xs:string" name="name" fixed="Biomarker findings"/>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_78_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please indicate if the diagnosis was clinically confirmed (indicate the corresponding HPO terms).</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Clinically confirmed diagnosis"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Record_11_4" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please describe the phenotype or symptoms by selecting the appropriate HPO terms.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Row" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                                                        <xs:element name="Dataelement_33_2" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please enter HPO term.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="HPO term"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute type="xs:string" name="name" fixed="Phenotype"/>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_88_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please select the specific therapy.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Specific therapy"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+                                      <xs:element name="Dataelement_65_1" minOccurs="0">
+                                        <xs:annotation>
+                                          <xs:documentation>Please add details on other specific therapy.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="name" fixed="Other specific therapy"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+
+
+                                      
+                                    </xs:all>
+                                    <xs:attribute name="name" use="required" fixed="form_184_ver-16"></xs:attribute>
+                                  </xs:complexType>
+                                </xs:element>
+
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+
+                          <xs:element name="Episodes" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Episode" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="LogitudinalData">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            
+
+                                            
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" use="required">
+                                      <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                          <xs:minLength value="1"></xs:minLength>
+                                        </xs:restriction>
+                                      </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="optionalText">
+                                      <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                          <xs:minLength value="1"></xs:minLength>
+                                        </xs:restriction>
+                                      </xs:simpleType>
+                                    </xs:attribute>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          
+                        </xs:sequence>
+                        <xs:attribute name="name" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:minLength value="1"></xs:minLength>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
