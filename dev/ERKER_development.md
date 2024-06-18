@@ -491,3 +491,5 @@ sekundärdiagnosen:
 - 5.5/5.6: branching logic, wenn Indexfall "ja", sollte 5.6 nicht angezeigt werden
 - 6.1.16: Notiz hinzufügen: Bedeutung erklären mitochondriale Vererbung
 - prospectively for v1.8 we will use @if Action tag, asking at the beginning of the form whether this data capture is for NARSE y/n, then if 'y' then only NARSE elements will be shown (see dev/ERKER_development.md)
+- change SCT not recorded (qualifier value) to  SCT_Patient data not recorded (finding)?
+- value set variable changes in Sex at Birth and Administrative Gender
