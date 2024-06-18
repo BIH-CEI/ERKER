@@ -493,3 +493,5 @@ sekundärdiagnosen:
 - prospectively for v1.8 we will use @if Action tag, asking at the beginning of the form whether this data capture is for NARSE y/n, then if 'y' then only NARSE elements will be shown (see dev/ERKER_development.md)
 - change SCT not recorded (qualifier value) to  SCT_Patient data not recorded (finding)?
 - value set variable changes in Sex at Birth and Administrative Gender
+- 3.2A: SCT(date of death) -> SCT(time of death) (siehe MII-KDS):https://art-decor.org/ad/#/mide-/datasets/dataset/2.16.840.1.113883.3.1937.777.24.1.1/2018-06-05T12:44:12/concept/2.16.840.1.113883.3.1937.777.24.2.448/2018-08-06T09:32:16
+- 
