@@ -1,3 +1,7 @@
+# This Repo is out of date, please see https://github.com/BIH-CEI/RareLink for our current development.
+
+
+
 ![Alt text](image.png)
 ### (ERDRI-CDS compatible data capture in REDCap)
 
