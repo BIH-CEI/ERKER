@@ -73,7 +73,6 @@ We would like to thank all participating researchers in the development of the *
 Annic Weyersberg, Ana Grönke, Elisabeth Nyoungui, Jana Zschüntzsch, Josef Schepers, Miriam Hübner, Steffen Sander, Filip Rehburg, Adam Graefe
 ## Authors
 - Adam Graefe (adam.graefe@bih-charite.de)
-- Dr. Josef Schepers
 - Filip Rehburg
 - Miriam Hübner
 - Steffen Sander
